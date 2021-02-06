@@ -1,0 +1,8 @@
+t=2021-02-05T03:41:48+0000 lvl=info msg="no configuration paths supplied"
+t=2021-02-05T03:41:48+0000 lvl=info msg="ignoring default config path, could not stat it" path=/home/runner/.ngrok2/ngrok.yml err="stat /home/runner/.ngrok2/ngrok.yml: no such file or directory"
+t=2021-02-05T03:41:48+0000 lvl=warn msg="can't bind default web address, trying alternatives" obj=web addr=127.0.0.1:4040
+t=2021-02-05T03:41:48+0000 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4041
+t=2021-02-05T03:41:49+0000 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-02-05T03:41:49+0000 lvl=info msg="client session established" obj=csess id=ecf4b7618f61
+t=2021-02-05T03:41:49+0000 lvl=info msg="started tunnel" obj=tunnels name="command_line (http)" addr=http://localhost:3030 url=http://97f03361a8b6.ngrok.io
+t=2021-02-05T03:41:49+0000 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:3030 url=https://97f03361a8b6.ngrok.io

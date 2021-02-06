@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body {
+  display:flex; flex-direction:column; justify-content:center;
+  min-height:90vh;
+}
+
+html {
+  background-color: black;
+}
+
+div {
+  text-align: center;
+  background-color: white;
+  width: 50%;
+  border: 15px solid #02D2CC;
+  padding: 50px;
+  margin: auto;
+  
+  
+  border-bottom-right-radius:5%;
+  border-bottom-left-radius:5%;
+  border-top-right-radius:5%;
+  border-top-left-radius:5%;
+}
+
+input {
+	ext-align: center;
+    font-size: 1em;
+}
+
+button {
+  background-color: #5DE525;
+  border-bottom-right-radius:20%;
+  border-bottom-left-radius:20%;
+  border-top-right-radius:20%;
+  border-top-left-radius:20%;
+}
+
+
+</style>
+
+<body>
+
+<div>
+	<input id="txt" value="16b65c2fa7cc84b2bf5b" style="border:none; fon" readonly/> <br>
+    <a href='https://a211feeaa9cb.ngrok.io' target="_blank">dev</a> <br>
+    <button id="btn" style="border:none">Click</button >
+</div>
+
+
+
+<script> 
+const txt = document.querySelector('#txt')
+const btn = document.querySelector('#btn')
+
+const copy = (text) => {
+  const textarea = document.createElement('textarea')
+  document.body.appendChild(textarea)
+  textarea.value = text
+  textarea.select()
+  document.execCommand('copy')
+  textarea.remove()
+}
+
+btn.addEventListener('click', (e) => {
+  copy(txt.value)
+})
+</script>
+
+</body>
+</html>
+
+
